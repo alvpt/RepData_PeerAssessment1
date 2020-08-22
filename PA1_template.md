@@ -67,7 +67,7 @@ hist(databydate$tsteps, xlab = "Total daily Steps",main="Histogram of Total Step
 
 dev.off()
 
-![](figure/1_totalNumberStepsDaily.jpeg) 
+![First](figure/1_totalNumberStepsDaily.jpeg?raw=true) 
 
 ```
 
@@ -108,7 +108,7 @@ ggplot(data=data_timePlot, aes(x=interval, y=steps)) + geom_line()
 dev.off()
 
 
-![Second plot](figure/2_averageSteps5minInterval.jpeg) 
+![Second plot](2_averageSteps5minInterval.jpeg) 
 
 
 ```
