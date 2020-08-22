@@ -61,7 +61,13 @@ databydate
 
 ```{r histogran steps}
 
+jpeg(file="figure\\1_totalNumberStepsDaily.jpeg")
+
 hist(databydate$tsteps, xlab = "Total daily Steps",main="Histogram of Total Steps by day", breaks = 20)
+
+dev.off()
+
+![First plot](figure/1_totalNumberStepsDaily.jpeg) 
 
 ```
 
@@ -101,7 +107,8 @@ ggplot(data=data_timePlot, aes(x=interval, y=steps)) + geom_line()
 
 dev.off()
 
-ggplot(data=data_timePlot, aes(x=interval, y=steps)) + geom_line()
+
+![Second plot](figure/2_averageSteps5minInterval.jpeg) 
 
 
 ```
@@ -183,7 +190,8 @@ hist(databydateFilled$tsteps, xlab = "Total daily Steps",main="Histogram of Tota
 
 dev.off()
 
-hist(databydateFilled$tsteps, xlab = "Total daily Steps",main="Histogram of Total Steps by day", breaks = 20)
+
+![Third plot](figure/3_totalNumberStepsDaily_Filled.jpeg)
 
 
 mean(databydateFilled$tsteps)
@@ -254,7 +262,8 @@ grid.arrange(p1, p2, nrow = 2)
  
 dev.off()
 
-grid.arrange(p1, p2, nrow = 2) 
+
+![Fourth plot](figure/4_averageSteps5minInterval_week.jpeg)
 
 ```
 
