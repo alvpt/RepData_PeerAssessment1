@@ -63,13 +63,6 @@ databydate
 
 ```{r histogran steps}
 
-
-jpeg(file="figure\\1_totalNumberStepsDaily.jpeg")
-
-hist(databydate$tsteps, xlab = "Total daily Steps",main="Histogram of Total Steps by day", breaks = 20)
-
-dev.off()
-
 hist(databydate$tsteps, xlab = "Total daily Steps",main="Histogram of Total Steps by day", breaks = 20)
 
 ```
