@@ -67,9 +67,9 @@ hist(databydate$tsteps, xlab = "Total daily Steps",main="Histogram of Total Step
 
 dev.off()
 
-![First](https://github.com/alvpt/RepData_PeerAssessment1/blob/master/figure/1_totalNumberStepsDaily.png) 
-
 ```
+
+![First](figure/1_totalNumberStepsDaily.png) 
 
 3. Calculate and report the mean and median of the total number of steps taken per day.
 
@@ -108,10 +108,10 @@ ggplot(data=data_timePlot, aes(x=interval, y=steps)) + geom_line()
 dev.off()
 
 
-#![Second plot](2_averageSteps5minInterval.png) 
-
 
 ```
+
+![Second plot](2_averageSteps5minInterval.png) 
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -191,14 +191,13 @@ hist(databydateFilled$tsteps, xlab = "Total daily Steps",main="Histogram of Tota
 dev.off()
 
 
-#![Third plot](figure/3_totalNumberStepsDaily_Filled.png)
-
-
 mean(databydateFilled$tsteps)
 median(databydateFilled$tsteps)
 
 
 ```
+
+![Third plot](figure/3_totalNumberStepsDaily_Filled.png)
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
@@ -263,8 +262,6 @@ grid.arrange(p1, p2, nrow = 2)
 dev.off()
 
 
-#![Fourth plot](figure/4_averageSteps5minInterval_week.png)
-
 ```
-
+![Fourth plot](figure/4_averageSteps5minInterval_week.png)
 
