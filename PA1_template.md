@@ -67,7 +67,7 @@ hist(databydate$tsteps, xlab = "Total daily Steps",main="Histogram of Total Step
 
 dev.off()
 
-![First](figure/1_totalNumberStepsDaily.png) 
+![First](https://github.com/alvpt/RepData_PeerAssessment1/blob/master/figure/1_totalNumberStepsDaily.png) 
 
 ```
 
