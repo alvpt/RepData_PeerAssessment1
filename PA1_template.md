@@ -61,13 +61,13 @@ databydate
 
 ```{r histogran steps}
 
-jpeg(file="figure\\1_totalNumberStepsDaily.jpeg")
+png(file="figure\\1_totalNumberStepsDaily.png")
 
 hist(databydate$tsteps, xlab = "Total daily Steps",main="Histogram of Total Steps by day", breaks = 20)
 
 dev.off()
 
-![First](figure/1_totalNumberStepsDaily.jpeg?raw=true) 
+![First](figure/1_totalNumberStepsDaily.png) 
 
 ```
 
@@ -101,14 +101,14 @@ colnames(data_timePlot) <- c("interval", "steps")
 
 
 
-jpeg(file="figure\\2_averageSteps5minInterval.jpeg")
+png(file="figure\\2_averageSteps5minInterval.png")
 
 ggplot(data=data_timePlot, aes(x=interval, y=steps)) + geom_line()
 
 dev.off()
 
 
-![Second plot](2_averageSteps5minInterval.jpeg) 
+#![Second plot](2_averageSteps5minInterval.png) 
 
 
 ```
@@ -184,14 +184,14 @@ colnames(data_timePlotFilled) <- c("steps", "date", "interval")
 databydateFilled <- data_timePlotFilled %>% select(date, steps) %>% group_by(date) %>% summarize(tsteps= sum(steps)) %>%na.omit()
 
 
-jpeg(file="figure\\3_totalNumberStepsDaily_Filled.jpeg")
+png(file="figure\\3_totalNumberStepsDaily_Filled.png")
 
 hist(databydateFilled$tsteps, xlab = "Total daily Steps",main="Histogram of Total Steps by day", breaks = 20)
 
 dev.off()
 
 
-![Third plot](figure/3_totalNumberStepsDaily_Filled.jpeg)
+#![Third plot](figure/3_totalNumberStepsDaily_Filled.png)
 
 
 mean(databydateFilled$tsteps)
@@ -256,14 +256,14 @@ p1 <- ggplot(data=data_timePlot_week, aes(x=interval, y=weekend)) + geom_line() 
 p2 <- ggplot(data=data_timePlot_week, aes(x=interval, y=weekday)) + geom_line() + ggtitle("weekday")
 
 
-jpeg(file="figure\\4_averageSteps5minInterval_week.jpeg") 
+png(file="figure\\4_averageSteps5minInterval_week.png") 
 
 grid.arrange(p1, p2, nrow = 2) 
  
 dev.off()
 
 
-![Fourth plot](figure/4_averageSteps5minInterval_week.jpeg)
+#![Fourth plot](figure/4_averageSteps5minInterval_week.png)
 
 ```
 
