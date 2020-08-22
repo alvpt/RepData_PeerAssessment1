@@ -67,7 +67,7 @@ hist(databydate$tsteps, xlab = "Total daily Steps",main="Histogram of Total Step
 
 dev.off()
 
-![First plot](figure/1_totalNumberStepsDaily.jpeg) 
+![](figure/1_totalNumberStepsDaily.jpeg) 
 
 ```
 
