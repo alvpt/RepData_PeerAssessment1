@@ -111,7 +111,7 @@ dev.off()
 
 ```
 
-![Second plot](2_averageSteps5minInterval.png) 
+![Second plot](figure/2_averageSteps5minInterval.png) 
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
